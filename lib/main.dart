@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kanban/view/board_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,14 +18,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.plusJakartaSansTextTheme(),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text("Hello, World!")],
-          ),
-        ),
-      ),
+      home: const BoardView(),
     );
   }
 }
