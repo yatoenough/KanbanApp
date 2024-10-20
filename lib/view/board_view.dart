@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kanban/widgets/board_app_bar.dart';
+import 'package:kanban/widgets/empty_board.dart';
 
 class BoardView extends StatelessWidget {
   const BoardView({super.key});
@@ -9,6 +10,7 @@ class BoardView extends StatelessWidget {
     return const Scaffold(
       appBar: BoardAppBar(),
       backgroundColor: Color(0xfff4f7fd),
+      body: EmptyBoard(),
     );
   }
 }

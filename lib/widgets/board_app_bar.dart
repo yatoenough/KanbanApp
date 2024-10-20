@@ -6,7 +6,7 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight + 5);
 
   @override
   Widget build(BuildContext context) {
