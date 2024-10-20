@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanban/widgets/interactive/primary_button.dart';
 
 class EmptyBoard extends StatelessWidget {
   const EmptyBoard({super.key});
@@ -19,7 +20,7 @@ class EmptyBoard extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          FilledButton(
+          PrimaryButton(
             onPressed: () {},
             child: Text(
               "+ Add New Column",

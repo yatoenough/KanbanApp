@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanban/widgets/interactive/primary_button.dart';
 
 class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
   const BoardAppBar({
@@ -28,9 +29,12 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       actions: [
-        const FilledButton(
+        const PrimaryButton(
           onPressed: null,
-          child: Icon(Icons.add),
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+          ),
         ),
         IconButton(
           onPressed: () {},
