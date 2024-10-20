@@ -9,7 +9,6 @@ class BoardView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: BoardAppBar(),
-      backgroundColor: Color(0xfff4f7fd),
       body: EmptyBoard(),
     );
   }

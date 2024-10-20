@@ -21,9 +21,9 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
               height: 25,
             ),
           ),
-          const Text(
+          Text(
             "Platform launch",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ],
       ),

@@ -21,11 +21,12 @@ class EmptyBoard extends StatelessWidget {
           ),
           FilledButton(
             onPressed: () {},
-            child: const Text(
+            child: Text(
               "+ Add New Column",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium!
+                  .copyWith(color: Colors.white),
             ),
           )
         ],
