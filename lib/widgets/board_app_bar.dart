@@ -23,9 +23,22 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
               height: 25,
             ),
           ),
-          Text(
-            "Platform launch",
-            style: Theme.of(context).textTheme.titleLarge,
+          Expanded(
+            child: GestureDetector(
+              onTap: () => print("tap"),
+              child: Row(
+                children: [
+                  Text(
+                    "Platform launch",
+                    style: Theme.of(context).textTheme.titleLarge,
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  SvgPicture.asset("assets/svg/icon-chevron-down.svg"),
+                ],
+              ),
+            ),
           ),
         ],
       ),
