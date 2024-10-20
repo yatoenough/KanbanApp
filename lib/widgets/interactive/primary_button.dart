@@ -16,6 +16,7 @@ class PrimaryButton extends StatelessWidget {
       onPressed: onPressed,
       style: FilledButton.styleFrom(
         backgroundColor: const Color(0xff635fc7),
+        disabledBackgroundColor: const Color.fromARGB(140, 98, 95, 199),
       ),
       child: child,
     );

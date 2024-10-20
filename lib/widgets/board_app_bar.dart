@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kanban/widgets/interactive/primary_button.dart';
+import 'package:kanban/widgets/main_drawer.dart';
 
 class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
   const BoardAppBar({
@@ -23,22 +24,8 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
               height: 25,
             ),
           ),
-          Expanded(
-            child: GestureDetector(
-              onTap: () => print("tap"),
-              child: Row(
-                children: [
-                  Text(
-                    "Platform launch",
-                    style: Theme.of(context).textTheme.titleLarge,
-                  ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  SvgPicture.asset("assets/svg/icon-chevron-down.svg"),
-                ],
-              ),
-            ),
+          const MainDrawer(
+            title: "Platform Launch",
           ),
         ],
       ),
