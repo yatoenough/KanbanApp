@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:kanban/widgets/interactive/primary_button.dart';
 
 class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -16,8 +17,8 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
         children: [
           Container(
             margin: const EdgeInsets.only(right: 10),
-            child: Image.asset(
-              "assets/logo.png",
+            child: SvgPicture.asset(
+              "assets/svg/logo-mobile.svg",
               width: 25,
               height: 25,
             ),
@@ -29,11 +30,10 @@ class BoardAppBar extends StatelessWidget implements PreferredSizeWidget {
         ],
       ),
       actions: [
-        const PrimaryButton(
+        PrimaryButton(
           onPressed: null,
-          child: Icon(
-            Icons.add,
-            color: Colors.white,
+          child: SvgPicture.asset(
+            "assets/svg/icon-add-task-mobile.svg",
           ),
         ),
         IconButton(
